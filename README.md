@@ -1,32 +1,25 @@
-<!-- markdownlint-disable MD041 -->
-<h1 align="center">
-    Corona-Warn-App Server
-</h1>
+# Corona-Warn-App Server
 
-<p align="center">
-    <a href="https://github.com/corona-warn-app/cwa-server/commits/" title="Last Commit"><img src="https://img.shields.io/github/last-commit/corona-warn-app/cwa-server?style=flat"></a>
-    <a href="https://github.com/corona-warn-app/cwa-server/issues" title="Open Issues"><img src="https://img.shields.io/github/issues/corona-warn-app/cwa-server?style=flat"></a>
-    <a href="https://circleci.com/gh/corona-warn-app/cwa-server" title="Build Status"><img src="https://circleci.com/gh/corona-warn-app/cwa-server.svg?style=shield&circle-token=4ab059989d10709df19eb4b98ab7c121a25e981a"></a>
-        <a href="https://sonarcloud.io/dashboard?id=corona-warn-app_cwa-server" title="Quality Gate"><img src="https://sonarcloud.io/api/project_badges/measure?project=corona-warn-app_cwa-server&metric=alert_status"></a>
-        <a href="https://sonarcloud.io/component_measures?id=corona-warn-app_cwa-server&metric=Coverage&view=list" title="Coverage"><img src="https://sonarcloud.io/api/project_badges/measure?project=corona-warn-app_cwa-server&metric=coverage"></a>
-    <a href="https://github.com/corona-warn-app/cwa-server/blob/HEAD/LICENSE" title="License"><img src="https://img.shields.io/badge/License-Apache%202.0-green.svg?style=flat"></a>
-    <a href="https://api.reuse.software/info/github.com/corona-warn-app/cwa-server" title="REUSE Status"><img src="https://api.reuse.software/badge/github.com/corona-warn-app/cwa-server"></a>
-</p>
+> reverse engineering of the Corona-Warn-App Server project
 
-<p align="center">
-  <a href="#development">Development</a> •
-  <a href="#service-apis">Service APIs</a> •
-  <a href="#documentation">Documentation</a> •
-  <a href="#support-and-feedback">Support</a> •
-  <a href="#how-to-contribute">Contribute</a> •
-  <a href="#contributors">Contributors</a> •
-  <a href="#repositories">Repositories</a> •
-  <a href="#licensing">Licensing</a>
-</p>
+## Dependencies
 
-The goal of this project is to develop the official Corona-Warn-App for Germany based on the exposure notification API from [Apple](https://www.apple.com/covid19/contacttracing/) and [Google](https://www.google.com/covid19/exposurenotifications/). The apps (for both iOS and Android) use Bluetooth technology to exchange anonymous encrypted data with other mobile phones (on which the app is also installed) in the vicinity of an app user's phone. The data is stored locally on each user's device, preventing authorities or other parties from accessing or controlling the data. This repository contains the **implementation of the server for encryption keys** for the Corona-Warn-App.
+- Java 17
+- Docker
 
-In this documentation, Corona-Warn-App services are also referred to as CWA services.
+## Development
+
+```bash
+# Compile protobuf protocols etc.
+./mvnw compile
+```
+
+## References
+
+- https://www.youtube.com/watch?v=ytglSxeTPyU
+- https://www.baeldung.com/spring-data-jdbc-intro
+-
+------------------
 
 ## Architecture Overview
 
